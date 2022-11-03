@@ -1,0 +1,371 @@
+/* ===== Global Rules ===== */
+
+@media screen and (min-width: 1401px) {
+  .container {
+    width: 100%;
+    max-width: 1320px;
+    padding-inline: 25px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 100%;
+    max-width: 1140px;
+    padding-inline: 0px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+    padding-inline: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: none;
+    padding-inline: 15px;
+  }
+  .title {
+    margin-bottom: 1.25rem;
+  }
+}
+
+/* =============== Navbar =============== */
+
+@media screen and (max-width: 1200px) {
+  .navbar ul {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar .menu-icon {
+    padding-inline: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .navbar .menu-icon i {
+    display: block;
+  }
+
+  .navbar .nav-links {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    flex-direction: column;
+    background-color: #000e;
+    left: 0;
+    top: 100%;
+    text-align: left;
+    display: none;
+  }
+
+  .navbar .nav-links:target {
+    display: block;
+  }
+
+  .nav-links li {
+    width: 100%;
+    border-bottom: 1px solid #ddd2;
+  }
+
+  .nav-links .no-border {
+    border: none;
+  }
+
+  .nav-links a {
+    width: fit-content;
+    text-align: left;
+  }
+
+  .social-icons a.dribble::before {
+    bottom: 50%;
+    right: 120%;
+    transform: translateY(50%);
+  }
+
+  .social-icons a.dribble::after {
+    border-left-color: var(--tool-tip-color);
+    left: -9px;
+    transform: translateY(50%);
+    bottom: 50%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .navbar .social-icons {
+    display: none;
+  }
+}
+
+/* =============== Header =============== */
+
+@media screen and (max-width: 1200px) {
+  .overlay-layer {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .overlay-layer h4 {
+    font-size: 1.5rem;
+  }
+
+  .overlay-layer h2 {
+    font-size: 2.5rem;
+  }
+
+  .overlay-layer p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+/* =============== About =============== */
+
+@media screen and (max-width: 992px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-statistics {
+    gap: 30px;
+    position: relative;
+  }
+
+  .about-statistics::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: 1px dotted #e0dede;
+  }
+
+  .about-statistics::after {
+    content: "";
+    width: 100%;
+    height: calc(50% - 15px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top: 1px dotted #e0dede;
+  }
+
+  .about-statistics .item {
+    flex: 1 1 calc(50% - 15px);
+  }
+
+  .about-statistics .item:not(:last-child)::before {
+    display: none;
+  }
+}
+
+/* =============== Services =============== */
+
+@media screen and (max-width: 992px) {
+  .service-items {
+    gap: 30px;
+  }
+
+  .service-items .item {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service-items {
+    flex-direction: column;
+  }
+}
+
+/* =============== Resume =============== */
+
+@media screen and (max-width: 768px) {
+  .resume .cards {
+    flex-direction: column;
+  }
+
+  .resume .cards > div {
+    padding-left: 0px;
+  }
+
+  .skills {
+    padding-left: 0px;
+  }
+
+  .skills-group {
+    flex-direction: column;
+  }
+}
+
+/* =============== Portfolio =============== */
+
+@media screen and (min-width: 1400px) {
+  .portfolio .gallery {
+    height: 1115px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .portfolio .gallery {
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .portfolio .gallery {
+    height: 840px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .portfolio .gallery {
+    height: 1405px;
+  }
+
+  .gallery .image {
+    width: calc((100% - 1.25rem) / 2);
+  }
+
+  .table {
+    order: 1;
+  }
+
+  .stick-paper {
+    order: 2;
+  }
+
+  .papers {
+    order: 3;
+  }
+
+  .toy {
+    order: 4;
+  }
+
+  .phone {
+    order: 5;
+  }
+
+  .tools {
+    order: 6;
+  }
+
+  .charger {
+    order: 7;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio .gallery {
+    height: 983px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .portfolio .gallery {
+    height: auto;
+  }
+
+  .gallery .image {
+    width: 100%;
+  }
+}
+
+/* =============== Testimonail =============== */
+
+@media screen and (max-width: 992px) {
+  .feedback .client {
+    flex: 1 1 100%;
+  }
+}
+
+/* =============== Contact =============== */
+
+@media screen and (max-width: 1200px) {
+  .contact-form form .user-info > input {
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact .contact-info {
+    flex-grow: 2;
+  }
+
+  .contact .contact-form {
+    flex-grow: 5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact .contact-body {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact .contact-info {
+    order: 2;
+  }
+
+  .contact .contact-form {
+    align-items: center;
+  }
+
+  .contact-info .communication {
+    align-items: center;
+  }
+
+  .contact-info .communication p {
+    max-width: 185px;
+    text-align: center;
+  }
+
+  .social-media {
+    align-items: center;
+  }
+
+  .social-media .social-links {
+    gap: 30px;
+    justify-content: center;
+  }
+}
+
+/* =============== Footer =============== */
+
+@media screen and (max-width: 992px) {
+  body > .footer {
+    padding-block: 40px !important;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}
